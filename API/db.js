@@ -1,7 +1,7 @@
 //Criando a conexão com o banco de dados
-import mysql from "mysql";
-import { config } from 'dotenv';
+import { config } from "dotenv";
 config();
+import mysql from "mysql"
 
 
 export const db = mysql.createConnection({
@@ -10,4 +10,5 @@ export const db = mysql.createConnection({
     password: process.env.DB_PASSWORD,
     database: process.env.DB_NAME
 })
+
 
